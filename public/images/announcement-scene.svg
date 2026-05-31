@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <rect width="600" height="800" fill="#FAF6EF"/>
+  <path d="M80 800 L80 220 C80 120 200 70 300 70 C400 70 520 120 520 220 L520 800" fill="none" stroke="#C8A04A" stroke-width="4" opacity="0.5"/>
+  <g fill="#E8B23A" opacity="0.8">
+    <circle cx="120" cy="150" r="9"/><circle cx="180" cy="110" r="9"/><circle cx="250" cy="88" r="9"/>
+    <circle cx="300" cy="80" r="9"/><circle cx="350" cy="88" r="9"/><circle cx="420" cy="110" r="9"/>
+    <circle cx="480" cy="150" r="9"/>
+  </g>
+  <g fill="#C8A04A" opacity="0.45">
+    <circle cx="255" cy="430" r="42"/>
+    <path d="M195 640 C195 540 225 510 255 510 C285 510 315 540 315 640 Z"/>
+    <circle cx="345" cy="430" r="42"/>
+    <path d="M285 640 C285 540 315 510 345 510 C375 510 405 540 405 640 Z"/>
+  </g>
+  <text x="300" y="730" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#7A1E1E" opacity="0.4">couple under a floral toran — placeholder</text>
+</svg>

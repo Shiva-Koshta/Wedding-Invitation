@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+/* Design tokens — the single source of truth for colors & fonts.
+   Components reference these via Tailwind utilities (bg-cream, text-gold, font-script…). */
+@theme {
+  --color-cream: #faf6ef;
+  --color-gold: #c8a04a;
+  --color-champagne: #d8b56a;
+  --color-maroon: #7a1e1e;
+  --color-marigold: #e8b23a;
+
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-script: "Pinyon Script", "Cormorant Garamond", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Gently settle each full-height section into place instead of resting between two. */
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--color-cream);
+  color: var(--color-maroon);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle aged-paper grain layered over the cream background. */
+@utility parchment-grain {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(200, 160, 74, 0.06), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(122, 30, 30, 0.05), transparent 45%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Reduced-motion users get a calm, static experience. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

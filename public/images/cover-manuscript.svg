@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <rect width="600" height="800" fill="#FAF6EF"/>
+  <rect width="600" height="800" fill="url(#p)"/>
+  <defs>
+    <radialGradient id="p" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#FAF6EF"/>
+      <stop offset="1" stop-color="#E8DCC2"/>
+    </radialGradient>
+  </defs>
+  <rect x="30" y="30" width="540" height="740" fill="none" stroke="#C8A04A" stroke-width="3" opacity="0.6"/>
+  <rect x="44" y="44" width="512" height="712" fill="none" stroke="#C8A04A" stroke-width="1.5" opacity="0.4"/>
+  <g fill="#C8A04A" opacity="0.5">
+    <circle cx="300" cy="120" r="10"/>
+    <path d="M300 140 C320 180 320 220 300 250 C280 220 280 180 300 140 Z"/>
+    <path d="M250 400 C290 390 310 410 300 440 C270 430 255 420 250 400 Z" opacity="0.7"/>
+    <path d="M350 400 C310 390 290 410 300 440 C330 430 345 420 350 400 Z" opacity="0.7"/>
+  </g>
+  <text x="300" y="560" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#7A1E1E" opacity="0.35">~ aged manuscript backdrop ~</text>
+</svg>
