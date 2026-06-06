@@ -38,7 +38,7 @@ export default function GoldenSparkleText({ text }: { text: string }) {
       </div>
 
       <motion.h2
-        className="font-script text-5xl leading-tight text-gold drop-shadow-[0_1px_0_rgba(122,30,30,0.15)] sm:text-7xl md:text-8xl"
+        className="whitespace-nowrap font-script text-[clamp(2.25rem,11vw,7rem)] leading-tight text-gold drop-shadow-[0_1px_0_rgba(122,30,30,0.15)]"
         initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
         animate={{ opacity: 1, clipPath: 'inset(0 0% 0 0)' }}
         transition={{ duration: ANIM.textRevealDuration, ease: 'easeInOut' }}

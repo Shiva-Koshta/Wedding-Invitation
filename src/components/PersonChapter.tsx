@@ -26,13 +26,13 @@ export default function PersonChapter({
       <PortraitFrame src={portrait} alt={person.name} />
       <h2 className="font-script text-5xl leading-none text-gold sm:text-6xl">{person.name}</h2>
       {person.nickname && (
-        <p className="mt-2 font-serif text-lg italic text-maroon/70">&ldquo;{person.nickname}&rdquo;</p>
+        <p className="mt-2 font-serif text-base italic text-maroon/70 sm:text-lg">&ldquo;{person.nickname}&rdquo;</p>
       )}
-      <p className="mt-5 max-w-md font-serif text-lg leading-relaxed text-maroon/90 sm:text-xl">
+      <p className="mt-4 max-w-md font-serif text-base leading-relaxed text-maroon/90 sm:mt-5 sm:text-xl">
         {narration}
       </p>
-      <Divider className="my-7" />
-      <div className="space-y-1 font-serif text-base text-maroon/80 sm:text-lg">
+      <Divider className="my-5 sm:my-7" />
+      <div className="space-y-1 font-serif text-sm text-maroon/80 sm:text-lg">
         <p>
           {relations.grand} of <span className="text-maroon">{person.grandfather}</span>
         </p>

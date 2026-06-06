@@ -7,11 +7,11 @@ import { RECEPTION, VENUE, WEDDING_DATE } from '../data/wedding'
 
 function CountUnit({ value, label }: { value: string; label: string }) {
   return (
-    <div className="flex w-20 flex-col items-center rounded-2xl border border-gold/40 bg-cream/60 px-2 py-4 shadow-sm sm:w-28 sm:py-5">
-      <span className="font-serif text-4xl font-medium tabular-nums text-maroon sm:text-6xl">
+    <div className="flex w-16 flex-col items-center rounded-2xl border border-gold/40 bg-cream/60 px-1.5 py-3 shadow-sm sm:w-28 sm:px-2 sm:py-5">
+      <span className="font-serif text-3xl font-medium tabular-nums text-maroon sm:text-6xl">
         {value}
       </span>
-      <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-gold sm:text-xs">
+      <span className="mt-1 text-[0.55rem] uppercase tracking-[0.2em] text-gold sm:text-xs sm:tracking-[0.25em]">
         {label}
       </span>
     </div>
@@ -32,7 +32,7 @@ export default function CountdownPage() {
   return (
     <PageShell>
       <Eyebrow>Counting the moments</Eyebrow>
-      <h2 className="mb-8 font-script text-4xl text-gold sm:text-6xl">
+      <h2 className="mb-6 font-script text-4xl text-gold sm:mb-8 sm:text-6xl">
         {isPast ? 'The day is finally here' : "Until We Say 'I Do'"}
       </h2>
 
@@ -41,14 +41,14 @@ export default function CountdownPage() {
           Let the celebrations begin — thank you for being part of our story.
         </p>
       ) : (
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-5">
+        <div className="flex flex-nowrap justify-center gap-2 sm:gap-5">
           {units.map((u) => (
             <CountUnit key={u.label} value={u.value} label={u.label} />
           ))}
         </div>
       )}
 
-      <Divider className="my-8" />
+      <Divider className="my-6 sm:my-8" />
       <p className="font-serif text-xl font-medium text-maroon sm:text-2xl">{RECEPTION.date}</p>
       <p className="mt-1 font-serif text-base text-maroon/80 sm:text-lg">{VENUE.name}, Jabalpur</p>
       {VENUE.mapUrl && <MapLink url={VENUE.mapUrl} className="mt-2 text-base" />}

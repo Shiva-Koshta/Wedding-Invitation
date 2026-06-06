@@ -39,7 +39,7 @@ export default function NextChapter({ label = 'Continue the story', delay = 0 }:
       onClick={() =>
         document.getElementById(`section-${target.current}`)?.scrollIntoView({ behavior: 'smooth' })
       }
-      className="mt-12 flex cursor-pointer flex-col items-center gap-2 text-maroon/60 transition-colors hover:text-gold"
+      className="mt-7 flex cursor-pointer flex-col items-center gap-1.5 text-maroon/60 transition-colors hover:text-gold sm:mt-12 sm:gap-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: ANIM.revealDuration, delay }}

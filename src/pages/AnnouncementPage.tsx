@@ -12,12 +12,12 @@ export default function AnnouncementPage() {
         <p className="max-w-md font-serif text-lg text-maroon/90 sm:text-xl">
           Together with their families, we joyfully invite you to celebrate the wedding of
         </p>
-        <h2 className="mt-6 font-script text-5xl leading-tight text-gold sm:text-7xl">
+        <h2 className="mt-5 font-script text-5xl leading-tight text-gold sm:mt-6 sm:text-7xl">
           {COUPLE.groom.name}
           <span className="mx-3 text-maroon/70">&amp;</span>
           {COUPLE.bride.name}
         </h2>
-        <Divider className="my-7" />
+        <Divider className="my-5 sm:my-7" />
         <p className="font-serif text-2xl font-medium text-maroon sm:text-3xl">{RECEPTION.date}</p>
         <p className="mt-1 font-serif text-lg text-maroon/80">
           {RECEPTION.day} · {RECEPTION.time}

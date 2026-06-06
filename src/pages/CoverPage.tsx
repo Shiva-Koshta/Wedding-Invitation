@@ -11,7 +11,7 @@ export default function CoverPage() {
       <Eyebrow>A wedding invitation</Eyebrow>
       <GoldenSparkleText text="Once upon a time…" />
       <motion.p
-        className="mt-8 max-w-md font-serif text-xl text-maroon/90 sm:text-2xl"
+        className="mt-6 max-w-md font-serif text-lg text-maroon/90 sm:mt-8 sm:text-2xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: ANIM.revealDuration, delay: ANIM.textRevealDuration * 0.8 }}
@@ -19,7 +19,7 @@ export default function CoverPage() {
         …two souls were written into the very same story.
       </motion.p>
       <motion.p
-        className="mt-6 font-script text-5xl text-gold sm:text-6xl"
+        className="mt-5 font-script text-5xl text-gold sm:mt-6 sm:text-6xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: ANIM.revealDuration, delay: ANIM.textRevealDuration }}

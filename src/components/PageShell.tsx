@@ -20,7 +20,7 @@ export default function PageShell({
 }: PageShellProps) {
   return (
     <section
-      className={`relative flex min-h-dvh w-full flex-col items-center justify-center px-6 py-16 text-center sm:px-10 sm:py-20 ${className}`}
+      className={`relative flex h-dvh w-full flex-col items-center justify-center overflow-hidden px-6 py-10 text-center sm:px-10 sm:py-16 ${className}`}
     >
       {backdrop && (
         <>
