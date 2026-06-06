@@ -24,7 +24,9 @@ export default function CoverPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: ANIM.revealDuration, delay: ANIM.textRevealDuration }}
       >
-        {COUPLE.groom.name} &amp; {COUPLE.bride.name}
+        {COUPLE.groom.name}
+        <span className="mx-3 text-maroon/70">&amp;</span>
+        {COUPLE.bride.name}
       </motion.p>
       <NextChapter label={SCROLL_HINT} delay={ANIM.textRevealDuration + 0.6} />
     </PageShell>
