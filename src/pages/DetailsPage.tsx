@@ -1,4 +1,5 @@
 import Divider from '../components/Divider'
+import MapLink from '../components/MapLink'
 import NextChapter from '../components/NextChapter'
 import PageShell, { Eyebrow } from '../components/PageShell'
 import { IMAGES } from '../constants'
@@ -16,6 +17,7 @@ function EventRow({ event, highlight = false }: { event: WeddingEvent; highlight
           {event.name}
         </p>
         {event.time && <p className="font-serif text-sm text-maroon/60">{event.time}</p>}
+        {event.mapUrl && <MapLink url={event.mapUrl} className="mt-1 text-sm" />}
       </div>
       <div className="shrink-0 text-right">
         <p className="font-serif text-base text-gold sm:text-lg">{event.date}</p>
@@ -40,10 +42,11 @@ export default function DetailsPage() {
 
         <Divider className="my-7" />
 
-        <div className="font-serif text-maroon">
-          <p className="text-xs uppercase tracking-[0.35em] text-gold">Venue</p>
+        <div className="flex flex-col items-center font-serif text-maroon">
+          <p className="text-xs uppercase tracking-[0.35em] text-gold">Reception Venue</p>
           <p className="mt-2 text-xl font-medium sm:text-2xl">{VENUE.name}</p>
           <p className="text-base text-maroon/80 sm:text-lg">{VENUE.address}</p>
+          {VENUE.mapUrl && <MapLink url={VENUE.mapUrl} className="mt-2 text-base" />}
         </div>
 
         <p className="mt-8 max-w-md font-script text-2xl text-gold sm:text-3xl">

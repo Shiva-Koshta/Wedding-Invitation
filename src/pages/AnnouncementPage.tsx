@@ -1,4 +1,5 @@
 import Divider from '../components/Divider'
+import MapLink from '../components/MapLink'
 import NextChapter from '../components/NextChapter'
 import PageShell, { Eyebrow } from '../components/PageShell'
 import { IMAGES } from '../constants'
@@ -24,6 +25,7 @@ export default function AnnouncementPage() {
         <p className="mt-4 font-serif text-base text-maroon/80 sm:text-lg">
           {VENUE.name}, {VENUE.address}
         </p>
+        {VENUE.mapUrl && <MapLink url={VENUE.mapUrl} className="mt-2 text-base" />}
       <NextChapter />
     </PageShell>
   )

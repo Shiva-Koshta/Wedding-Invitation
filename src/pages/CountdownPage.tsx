@@ -1,4 +1,5 @@
 import Divider from '../components/Divider'
+import MapLink from '../components/MapLink'
 import NextChapter from '../components/NextChapter'
 import PageShell, { Eyebrow } from '../components/PageShell'
 import { useCountdown } from '../lib/useCountdown'
@@ -50,6 +51,7 @@ export default function CountdownPage() {
       <Divider className="my-8" />
       <p className="font-serif text-xl font-medium text-maroon sm:text-2xl">{RECEPTION.date}</p>
       <p className="mt-1 font-serif text-base text-maroon/80 sm:text-lg">{VENUE.name}, Jabalpur</p>
+      {VENUE.mapUrl && <MapLink url={VENUE.mapUrl} className="mt-2 text-base" />}
 
       <NextChapter />
     </PageShell>

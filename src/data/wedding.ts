@@ -14,12 +14,18 @@ export interface WeddingEvent {
   date: string
   day: string
   time?: string
+  mapUrl?: string
 }
 
 export interface Venue {
   name: string
   address: string
+  mapUrl?: string
 }
+
+/** Google Maps short links for the two locations. */
+const CEREMONY_MAP_URL = 'https://maps.app.goo.gl/kBRbxa1CD8g3pDNg8'
+const RECEPTION_MAP_URL = 'https://maps.app.goo.gl/8mtwZgpfbALnatJX9'
 
 export const COUPLE: { groom: Person; bride: Person } = {
   groom: {
@@ -36,9 +42,9 @@ export const COUPLE: { groom: Person; bride: Person } = {
 }
 
 export const EVENTS: WeddingEvent[] = [
-  { name: 'Satyanarayan Katha', date: '19 June 2026', day: 'Friday', time: '5:00 PM' },
-  { name: 'Mandap', date: '20 June 2026', day: 'Saturday' },
-  { name: 'Badi Haldi & Sangeet', date: '21 June 2026', day: 'Sunday' },
+  { name: 'Satyanarayan Katha', date: '19 June 2026', day: 'Friday', time: '5:00 PM', mapUrl: CEREMONY_MAP_URL },
+  { name: 'Mandap', date: '20 June 2026', day: 'Saturday', mapUrl: CEREMONY_MAP_URL },
+  { name: 'Badi Haldi & Sangeet', date: '21 June 2026', day: 'Sunday', mapUrl: CEREMONY_MAP_URL },
 ]
 
 export const RECEPTION: WeddingEvent = {
@@ -46,11 +52,13 @@ export const RECEPTION: WeddingEvent = {
   date: '22 June 2026',
   day: 'Monday',
   time: '7:00 PM onwards',
+  mapUrl: RECEPTION_MAP_URL,
 }
 
 export const VENUE: Venue = {
   name: 'Agrawal Barat Ghar',
   address: 'Baldeobagh, Jabalpur, Madhya Pradesh',
+  mapUrl: RECEPTION_MAP_URL,
 }
 
 /** Countdown target — the main wedding function (Reception), 22 June 2026 at 7:00 PM. */
