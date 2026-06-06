@@ -24,7 +24,7 @@ export const IMAGES = {
   coverManuscript: '/images/cover-manuscript.png',
   groomPortrait: '/images/groom-portrait.png',
   bridePortrait: '/images/bride-portrait.png',
-  familiesUnion: '/images/families-union.svg',
+  familiesUnion: '/images/families-union.png',
   announcementScene: '/images/announcement-scene.png',
   mandapBackdrop: '/images/mandap-backdrop.png',
   floralCorner: '/images/floral-corner.png',
