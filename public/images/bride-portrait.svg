@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320" width="220" height="320">
+  <rect width="220" height="320" fill="#FAF6EF"/>
+  <rect width="220" height="320" fill="url(#b)" opacity="0.5"/>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8B23A" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#C8A04A" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <g fill="#C8A04A" opacity="0.55">
+    <circle cx="110" cy="120" r="48"/>
+    <path d="M40 300 C40 220 80 188 110 188 C140 188 180 220 180 300 Z"/>
+  </g>
+  <text x="110" y="245" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#7A1E1E" opacity="0.7">Bride</text>
+  <text x="110" y="266" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#7A1E1E" opacity="0.5">portrait placeholder</text>
+</svg>

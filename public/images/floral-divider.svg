@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 40" width="320" height="40">
+  <defs>
+    <g id="mari-d">
+      <circle cx="7" cy="0" r="3.4" fill="#E8B23A"/>
+      <circle cx="4.9" cy="4.9" r="3.4" fill="#E8B23A"/>
+      <circle cx="0" cy="7" r="3.4" fill="#E8B23A"/>
+      <circle cx="-4.9" cy="4.9" r="3.4" fill="#E8B23A"/>
+      <circle cx="-7" cy="0" r="3.4" fill="#E8B23A"/>
+      <circle cx="-4.9" cy="-4.9" r="3.4" fill="#E8B23A"/>
+      <circle cx="0" cy="-7" r="3.4" fill="#E8B23A"/>
+      <circle cx="4.9" cy="-4.9" r="3.4" fill="#E8B23A"/>
+      <circle cx="0" cy="0" r="5" fill="#C8A04A"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#C8A04A" stroke-width="2" stroke-linecap="round">
+    <path d="M20 20 C70 20 95 12 140 20"/>
+    <path d="M300 20 C250 20 225 12 180 20"/>
+    <path d="M40 20 C55 10 70 10 80 20" opacity="0.6"/>
+    <path d="M280 20 C265 10 250 10 240 20" opacity="0.6"/>
+  </g>
+  <g fill="#D8B56A" opacity="0.8">
+    <path d="M150 20 C156 14 156 26 150 20 Z"/>
+    <ellipse cx="110" cy="20" rx="6" ry="3" transform="rotate(-20 110 20)"/>
+    <ellipse cx="210" cy="20" rx="6" ry="3" transform="rotate(20 210 20)"/>
+  </g>
+  <use href="#mari-d" x="160" y="20"/>
+</svg>
