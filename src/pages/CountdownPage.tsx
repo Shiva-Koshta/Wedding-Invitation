@@ -2,6 +2,7 @@ import Divider from '../components/Divider'
 import MapLink from '../components/MapLink'
 import NextChapter from '../components/NextChapter'
 import PageShell, { Eyebrow } from '../components/PageShell'
+import { IMAGES } from '../constants'
 import { useCountdown } from '../lib/useCountdown'
 import { RECEPTION, VENUE, WEDDING_DATE } from '../data/wedding'
 
@@ -30,7 +31,7 @@ export default function CountdownPage() {
   ]
 
   return (
-    <PageShell>
+    <PageShell backdrop={IMAGES.coverManuscript} backdropOpacity="opacity-30">
       <Eyebrow>Counting the moments</Eyebrow>
       <h2 className="mb-6 font-script text-4xl text-gold sm:mb-8 sm:text-6xl">
         {isPast ? 'The day is finally here' : "Until We Say 'I Do'"}

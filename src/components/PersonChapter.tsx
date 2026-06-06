@@ -1,3 +1,4 @@
+import { IMAGES } from '../constants'
 import type { Person } from '../data/wedding'
 import Divider from './Divider'
 import NextChapter from './NextChapter'
@@ -21,7 +22,7 @@ export default function PersonChapter({
   relations,
 }: PersonChapterProps) {
   return (
-    <PageShell>
+    <PageShell backdrop={IMAGES.coverManuscript} backdropOpacity="opacity-30">
       <Eyebrow>{eyebrow}</Eyebrow>
       <PortraitFrame src={portrait} alt={person.name} />
       <h2 className="font-script text-5xl leading-none text-gold sm:text-6xl">{person.name}</h2>

@@ -19,7 +19,7 @@ function FamilyColumn({ title, elders }: { title: string; elders: string[] }) {
 
 export default function FamiliesPage() {
   return (
-    <PageShell>
+    <PageShell backdrop={IMAGES.coverManuscript} backdropOpacity="opacity-30">
       <Eyebrow>Chapter Three · Two Families, One Story</Eyebrow>
       <div className="relative mb-4 w-full max-w-sm overflow-hidden rounded-2xl border-2 border-gold/50 shadow-lg sm:mb-6">
         <img
