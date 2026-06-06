@@ -21,14 +21,14 @@ export type PageKey = (typeof PAGE_KEYS)[number]
  * (e.g. change '/images/groom-portrait.svg' → '/images/groom-portrait.png').
  */
 export const IMAGES = {
-  coverManuscript: '/images/cover-manuscript.svg',
-  groomPortrait: '/images/groom-portrait.svg',
-  bridePortrait: '/images/bride-portrait.svg',
+  coverManuscript: '/images/cover-manuscript.png',
+  groomPortrait: '/images/groom-portrait.png',
+  bridePortrait: '/images/bride-portrait.png',
   familiesUnion: '/images/families-union.svg',
-  announcementScene: '/images/announcement-scene.svg',
+  announcementScene: '/images/announcement-scene.png',
   mandapBackdrop: '/images/mandap-backdrop.svg',
-  floralCorner: '/images/floral-corner.svg',
-  floralDivider: '/images/floral-divider.svg',
+  floralCorner: '/images/floral-corner.png',
+  floralDivider: '/images/floral-divider.png',
 } as const
 
 /** Animation timing (seconds) and easings, reused by all motion components. */
