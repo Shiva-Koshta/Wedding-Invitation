@@ -52,3 +52,6 @@ export const VENUE: Venue = {
   name: 'Agrawal Barat Ghar',
   address: 'Baldeobagh, Jabalpur, Madhya Pradesh',
 }
+
+/** Countdown target — the main wedding function (Reception), 22 June 2026 at 7:00 PM. */
+export const WEDDING_DATE = new Date('2026-06-22T19:00:00')

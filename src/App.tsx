@@ -1,6 +1,7 @@
 import Storybook from './components/Storybook'
 import AnnouncementPage from './pages/AnnouncementPage'
 import BridePage from './pages/BridePage'
+import CountdownPage from './pages/CountdownPage'
 import CoverPage from './pages/CoverPage'
 import DetailsPage from './pages/DetailsPage'
 import FamiliesPage from './pages/FamiliesPage'
@@ -12,6 +13,7 @@ const pages = [
   <BridePage key="bride" />,
   <FamiliesPage key="families" />,
   <AnnouncementPage key="announcement" />,
+  <CountdownPage key="countdown" />,
   <DetailsPage key="details" />,
 ]
 

@@ -46,3 +46,12 @@ export const SPARKLE_COUNT = 22
 
 /** Gentle hint prompting the reader to scroll down. */
 export const SCROLL_HINT = 'Scroll to begin the story'
+
+/** Countdown refresh interval and millisecond conversions. */
+export const COUNTDOWN_TICK_MS = 1000
+export const MS_PER = {
+  second: 1000,
+  minute: 60_000,
+  hour: 3_600_000,
+  day: 86_400_000,
+} as const
