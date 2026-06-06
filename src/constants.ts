@@ -26,7 +26,7 @@ export const IMAGES = {
   bridePortrait: '/images/bride-portrait.png',
   familiesUnion: '/images/families-union.svg',
   announcementScene: '/images/announcement-scene.png',
-  mandapBackdrop: '/images/mandap-backdrop.svg',
+  mandapBackdrop: '/images/mandap-backdrop.png',
   floralCorner: '/images/floral-corner.png',
   floralDivider: '/images/floral-divider.png',
 } as const
