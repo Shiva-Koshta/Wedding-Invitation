@@ -61,5 +61,8 @@ export const VENUE: Venue = {
   mapUrl: RECEPTION_MAP_URL,
 }
 
+/** Contact numbers for queries and RSVP. */
+export const CONTACTS: string[] = ['9981042180', '7879991099']
+
 /** Countdown target — the main wedding function (Reception), 22 June 2026 at 7:00 PM. */
 export const WEDDING_DATE = new Date('2026-06-22T19:00:00')
