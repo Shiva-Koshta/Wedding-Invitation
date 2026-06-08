@@ -3,7 +3,7 @@ import MapLink from '../components/MapLink'
 import NextChapter from '../components/NextChapter'
 import PageShell, { Eyebrow } from '../components/PageShell'
 import { IMAGES } from '../constants'
-import { EVENTS, RECEPTION, VENUE, type WeddingEvent } from '../data/wedding'
+import { CONTACTS, EVENTS, RECEPTION, VENUE, type WeddingEvent } from '../data/wedding'
 
 function EventRow({ event, highlight = false }: { event: WeddingEvent; highlight?: boolean }) {
   return (
@@ -49,6 +49,17 @@ export default function DetailsPage() {
           <p className="mt-1.5 text-lg font-medium sm:mt-2 sm:text-2xl">{VENUE.name}</p>
           <p className="text-sm text-maroon/80 sm:text-lg">{VENUE.address}</p>
           {VENUE.mapUrl && <MapLink url={VENUE.mapUrl} className="mt-2 text-sm sm:text-base" />}
+          <p className="mt-3 text-sm text-maroon/80 sm:text-base">
+            Contact:{' '}
+            {CONTACTS.map((number, i) => (
+              <span key={number}>
+                {i > 0 && ', '}
+                <a href={`tel:${number}`} className="text-gold hover:underline">
+                  {number}
+                </a>
+              </span>
+            ))}
+          </p>
         </div>
 
         <p className="mt-5 max-w-md font-script text-xl text-gold sm:mt-8 sm:text-3xl">
