@@ -9,8 +9,8 @@ import GroomPage from './pages/GroomPage'
 
 const pages = [
   <CoverPage key="cover" />,
-  <GroomPage key="groom" />,
   <BridePage key="bride" />,
+  <GroomPage key="groom" />,
   <FamiliesPage key="families" />,
   <AnnouncementPage key="announcement" />,
   <CountdownPage key="countdown" />,

@@ -6,8 +6,8 @@
 /** Ordered keys for the storybook pages; also drives the page-dot count. */
 export const PAGE_KEYS = [
   'cover',
-  'groom',
   'bride',
+  'groom',
   'families',
   'announcement',
   'details',
